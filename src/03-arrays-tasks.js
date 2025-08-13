@@ -231,7 +231,7 @@ function toArrayOfSquares(arr) {
 function getMovingSum(arr) {
   // const rez = new Array(arr.length).fill(0);
   let num = 0;
-  return arr.map(function (item) {
+  return arr.map(function a(item) {
     num += item;
     return num;
   });
@@ -269,7 +269,7 @@ function getSecondItems(arr) {
  *  [ 1,2,3,4,5 ] => [ 1, 2,2, 3,3,3, 4,4,4,4, 5,5,5,5,5 ]
  */
 function propagateItemsByPositionIndex(arr) {
-  const rez = arr.reduce(function (acc, item, index) {
+  const rez = arr.reduce(function a(acc, item, index) {
     const mas = Array(index + 1).fill(item);
     return acc.concat(mas);
   }, []);
